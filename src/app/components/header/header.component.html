@@ -1,1 +1,21 @@
+<div>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
 
+      <mat-drawer-container>
+        <mat-drawer #drawer class="example-sidenav" mode="side">
+          <p class="side-nav">Auto-resizing sidenav</p>
+        </mat-drawer>
+      </mat-drawer-container>
+
+        <i class="material-icons" (click)="drawer.toggle()">
+          menu
+        </i>
+
+      <span class="example-spacer"></span>
+      <span>Second Line</span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+
+</div>
