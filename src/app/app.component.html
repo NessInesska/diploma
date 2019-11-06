@@ -1,6 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <app-header></app-header>
+  <app-header (newContentType)="getNewContentType($event)"></app-header>
+  <app-content [newContent]="newContent"></app-content>
 </div>
 
 <router-outlet></router-outlet>

@@ -1,0 +1,24 @@
+.mat-list-icon {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.mat-list-base {
+  .mat-list-item {
+    .mat-line:nth-child(1) {
+      white-space: pre-wrap;
+      overflow: visible;
+      text-align: left;
+      line-height: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .mat-list-item.mat-2-line,
+  .mat-list-option.mat-2-line {
+    margin: 12px 0;
+  }
+}
+
+.mat-menu-panel {
+  width: 250px;
+}

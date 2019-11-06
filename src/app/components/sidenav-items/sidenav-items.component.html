@@ -1,0 +1,30 @@
+<mat-list>
+  <mat-list-item *ngFor="let note of notes" (click)="onOpenDetails(note)">
+    <mat-icon mat-list-icon>{{note?.icon}}</mat-icon>
+    <h3 mat-line>{{note?.name}}</h3>
+    <!--<p mat-line>Изменен: {{note?.updated | date}} </p>-->
+    <mat-divider></mat-divider>
+  </mat-list-item>
+</mat-list>
+
+<mat-menu #menu="matMenu" xPosition="after">
+  <button mat-menu-item (click)="openInfoPage('include')">
+    <mat-icon>dialpad</mat-icon>
+    <span>Зачисление в ДКШ</span>
+  </button>
+  <button mat-menu-item (click)="openInfoPage('exclude')">
+    <mat-icon>voicemail</mat-icon>
+    <span>Зачисление в ДШИ</span>
+  </button>
+</mat-menu>
+
+<mat-menu #exclude="matMenu" xPosition="after">
+  <button mat-menu-item>
+    <mat-icon>dialpad</mat-icon>
+    <span>Отчисление из ДКШ</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>voicemail</mat-icon>
+    <span>Отчисление из ДШИ</span>
+  </button>
+</mat-menu>

@@ -4,18 +4,15 @@
 
       <mat-drawer-container>
         <mat-drawer #drawer class="example-sidenav" mode="side">
-          <p class="side-nav">Auto-resizing sidenav</p>
+          <app-sidenav-items (contentType)="getContentType($event)"></app-sidenav-items>
         </mat-drawer>
       </mat-drawer-container>
 
-        <i class="material-icons" (click)="drawer.toggle()">
-          menu
-        </i>
+      <i class="material-icons" (click)="drawer.toggle()">
+        menu
+      </i>
 
-      <span class="example-spacer"></span>
-      <span>Second Line</span>
+      <span class="app-title">Система электронного документооборота ДКШ СГТУ</span>
     </mat-toolbar-row>
   </mat-toolbar>
-
-
 </div>

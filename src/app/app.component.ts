@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'diploma';
+  public title = 'diploma';
+  public newContent: string;
+
+  public getNewContentType($event) {
+    this.newContent = $event;
+  }
 }

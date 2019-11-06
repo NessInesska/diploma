@@ -1,24 +1,29 @@
-.example-icon {
-  padding: 0 14px;
-}
-
-.example-spacer {
-  flex: 1 1 auto;
-}
-
-.example-sidenav-content {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-.example-sidenav {
-  height: 100vh;
-  width: 100px;
-  background-color: #cccccc;
-}
-
 .mat-drawer-container {
   overflow: visible;
+}
+
+.mat-toolbar-row {
+  padding: 0;
+  display: flex;
+
+  .example-sidenav {
+    height: calc(100vh - 50px);
+    width: 250px;
+    background-color: #cccccc;
+  }
+
+  .app-title {
+    padding-right: 20px;
+    flex: 1;
+    justify-self: center;
+  }
+
+  .material-icons {
+    padding-left: 20px;
+    cursor: pointer;
+  }
+
+  .mat-drawer {
+    top: 32px;
+  }
 }

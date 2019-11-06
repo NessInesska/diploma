@@ -1,0 +1,67 @@
+<div *ngIf="!newContent">
+  <h2>Правила работы в системе</h2>
+  <div class="main-rules">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie libero libero, quis lobortis
+    tortor tincidunt at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+    Curae; Maecenas facilisis nec libero ac volutpat. Suspendisse maximus volutpat nisl, sit amet egestas
+    turpis tincidunt ut. Integer aliquam ultrices consequat. Praesent nec sodales leo. Aenean enim risus,
+    ultricies vel leo vitae, placerat facilisis velit. Sed malesuada risus ex, quis tempus diam suscipit eget.
+    Morbi egestas diam sapien, id faucibus metus lobortis ut.
+
+    In et nisl semper, commodo tortor egestas, fermentum quam. Nunc varius eros vitae dolor eleifend dictum.
+    Sed aliquam ultrices lacus, quis molestie dolor rutrum laoreet. Pellentesque placerat sit amet eros et ultrices.
+    Donec eget pulvinar orci, ut tempor turpis. Phasellus eget lectus nibh. Sed luctus tortor eget dui consequat
+    commodo. Mauris a pharetra odio, id semper est. Suspendisse pulvinar egestas tortor, eu tempus orci suscipit
+    vel. Nullam auctor diam eu pharetra lacinia.
+
+    Ut dapibus pretium ipsum, ut congue erat aliquet vel. Praesent in orci sit amet justo elementum sollicitudin
+    sit amet sit amet lectus. Sed placerat elit eu fermentum pulvinar. Sed ultrices, felis id interdum mattis,
+    tortor velit vestibulum diam, in blandit tortor dui non odio. Praesent eu augue risus. Vestibulum scelerisque
+    eros sapien, ut cursus est consequat maximus. Etiam sit amet sem a leo laoreet rutrum.
+  </div>
+</div>
+
+<div *ngIf="newContent == 'reestr'">
+  <app-reestr></app-reestr>
+</div>
+
+<div *ngIf="newContent == 'include'" class="include-content">
+  <h1>Заполнить документы на зачисление</h1>
+  <mat-list>
+    <mat-list-item (click)="openForm()">
+      <mat-icon mat-list-icon>note</mat-icon>
+      <h2 mat-line>Зачисление в ДКШ</h2>
+    </mat-list-item>
+
+    <mat-divider></mat-divider>
+
+    <mat-list-item>
+      <mat-icon mat-list-icon>note</mat-icon>
+      <h2 mat-line>Зачисление в ДШИ</h2>
+    </mat-list-item>
+  </mat-list>
+</div>
+
+<div *ngIf="newContent == 'form'">
+  <app-form></app-form>
+</div>
+
+<div *ngIf="newContent == 'exclude'">
+  <h3>Заполнить документы на отчисление</h3>
+
+</div>
+
+<div *ngIf="newContent == 'report'">
+  <h3>Выберите отчет: </h3>
+
+</div>
+
+<div *ngIf="newContent == 'requisities'">
+  <h3>Реквизиты ДКШ </h3>
+
+</div>
+
+<div *ngIf="newContent == 'info'">
+  <h3>Информация </h3>
+
+  <app-reestr></app-reestr>
+</div>

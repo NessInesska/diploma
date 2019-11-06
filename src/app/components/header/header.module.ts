@@ -4,6 +4,7 @@ import { MatSidenavModule, MatToolbarModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { HeaderComponent } from './header.component';
+import { SidenavItemsModule } from '../sidenav-items';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { HeaderComponent } from './header.component';
     CommonModule,
     MatToolbarModule,
     MatSidenavModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SidenavItemsModule
   ],
   exports: [
     HeaderComponent
